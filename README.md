@@ -37,5 +37,5 @@ See [Vuejs Getting Started](https://cli.vuejs.org).
 or 
 reveal.js by ##Hakim-[Github-Repository](https://github.com/hakimel/reveal.js) & [Reveal.js](https://revealjs.com/#/)
 
-### Customize configuration
+### Backstage
 Author: [MasterMischu](https://www.mastermischu.de) with the Courtesy of [pixolith GmbH & Co. KG](https://www.pixolith.de).
