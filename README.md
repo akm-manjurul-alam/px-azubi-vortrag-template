@@ -35,4 +35,4 @@ The guideline to use this project can be found on
 See [Vuejs Getting Started](https://cli.vuejs.org).
 
 ### Customize configuration
-Author: [MasterMischu](mastermischu.de) with the Courtesy of [pixolith GmbH & Co. KG](pixolith.de).
+Author: [MasterMischu](https://www.mastermischu.de) with the Courtesy of [pixolith GmbH & Co. KG](https://www.pixolith.de).
