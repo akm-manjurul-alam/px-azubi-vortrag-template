@@ -31,11 +31,11 @@ Edit global mixins in [src/globals/(your scss file)]
 
 ### Project specification
 This project and its templates are made with Revealjs with the theme-pixolith-2019 and it stands on Vuejs.
-The guideline to use Vuejs can be found on 
+###The guideline to use Vuejs can be found on 
 See [Vuejs Getting Started](https://cli.vuejs.org).
-The guideline to use Revealjs can be found [public/revealjs-FAQ/Revealjs-readme.txt] 
+###The guideline to use Revealjs can be found [public/revealjs-FAQ/Revealjs-readme.txt] 
 or 
-reveal.js by Hakim-[Github-Repository](https://github.com/hakimel/reveal.js) & [Reveal.js](https://revealjs.com/#/)
+reveal.js by ##Hakim-[Github-Repository](https://github.com/hakimel/reveal.js) & [Reveal.js](https://revealjs.com/#/)
 
 ### Customize configuration
 Author: [MasterMischu](https://www.mastermischu.de) with the Courtesy of [pixolith GmbH & Co. KG](https://www.pixolith.de).
