@@ -1,0 +1,394 @@
+@mixin heading-1($color: $headline-color, $font-size: 36, $text-transform: uppercase) {
+    @include font-bold();
+    color: $color;
+    font-size: rem($font-size);
+    line-height: 1.125;
+    letter-spacing: rem(3);
+    margin-bottom: rem(16);
+    text-transform: $text-transform;
+
+    @media (min-width: $tablet) {
+        font-size: dynamic-size($max-font-size: 80, $min-font-size: $font-size, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        letter-spacing: dynamic-size($max-font-size: 8, $min-font-size: 3, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        margin-bottom: rem(24);
+    }
+
+    @media (min-width: $extraLarge) {
+        font-size: dynamic-size($max-font-size: 100, $min-font-size: 80, $max-viewport: $fullWidthMaxNumber, $min-viewport: $extraLargeNumber);
+        letter-spacing: dynamic-size($max-font-size: 10, $min-font-size: 8, $max-viewport: $fullWidthMaxNumber, $min-viewport: $extraLargeNumber);
+    }
+
+    @media (min-width: $extraLargeMonitor) {
+        font-size: dynamic-size($max-font-size: 108, $min-font-size: 100, $max-viewport: $ultraHdMonitorNumber, $min-viewport: $fullWidthMaxNumber);
+        letter-spacing: rem(10);
+    }
+}
+
+@mixin heading-2($color: $headline-color, $font-size: 32, $text-transform: uppercase) {
+    @include font-bold();
+    color: $color;
+    font-size: rem($font-size);
+    line-height: 1.2;
+    letter-spacing: rem(2);
+    margin-bottom: rem(16);
+    text-transform: $text-transform;
+
+    @media (min-width: $tablet) {
+        font-size: dynamic-size($max-font-size: 56, $min-font-size: $font-size, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        line-height: 1.142857142857143;
+        letter-spacing: dynamic-size($max-font-size: 7, $min-font-size: 2, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        margin-bottom: rem(24);
+    }
+
+    @media (min-width: $extraLarge) {
+        font-size: dynamic-size($max-font-size: 70, $min-font-size: 56, $max-viewport: $fullWidthMaxNumber, $min-viewport: $extraLargeNumber);
+        letter-spacing: rem(7);
+    }
+
+    @media (min-width: $extraLargeMonitor) {
+        font-size: dynamic-size($max-font-size: 78, $min-font-size: 70, $max-viewport: $ultraHdMonitorNumber, $min-viewport: $fullWidthMaxNumber);
+    }
+}
+
+@mixin heading-3($color: $headline-color, $font-size: 28, $text-transform: uppercase) {
+    @include font-bold();
+    color: $color;
+    font-size: rem($font-size);
+    line-height: 1.2;
+    letter-spacing: rem(2);
+    margin-bottom: rem(16);
+    text-transform: $text-transform;
+
+    @media (min-width: $tablet) {
+        font-size: dynamic-size($max-font-size: 40, $min-font-size: $font-size, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        letter-spacing: dynamic-size($max-font-size: 5, $min-font-size: 2, $max-viewport: $fullWidthMaxNumber, $min-viewport: $tabletNumber);
+        margin-bottom: rem(24);
+    }
+
+    @media (min-width: $extraLarge) {
+        font-size: dynamic-size($max-font-size: 50, $min-font-size: 40, $max-viewport: $fullWidthMaxNumber, $min-viewport: $extraLargeNumber);
+    }
+
+    @media (min-width: $extraLargeMonitor) {
+        font-size: dynamic-size($max-font-size: 58, $min-font-size: 50, $max-viewport: $ultraHdMonitorNumber, $min-viewport: $fullWidthMaxNumber);
+        letter-spacing: rem(5);
+    }
+}
+
+@mixin heading-4($color: $headline-color, $font-size: 24, $text-transform: uppercase) {
+    @include font-bold();
+    color: $color;
+    font-size: rem($font-size);
+    line-height: 1.25;
+    letter-spacing: rem(1);
+    text-transform: $text-transform;
+    margin-bottom: rem(16);
+
+    @media (min-width: $tablet) {
+        font-size: dynamic-size($max-font-size: 32, $min-font-size: $font-size, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        letter-spacing: dynamic-size($max-font-size: 4, $min-font-size: 1, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        margin-bottom: rem(24);
+    }
+
+    @media (min-width: $extraLarge) {
+        font-size: dynamic-size($max-font-size: 40, $min-font-size: 32, $max-viewport: $fullWidthMaxNumber, $min-viewport: $extraLargeNumber);
+        letter-spacing: rem(4);
+    }
+
+    @media (min-width: $extraLargeMonitor) {
+        font-size: dynamic-size($max-font-size: 48, $min-font-size: 40, $max-viewport: $ultraHdMonitorNumber, $min-viewport: $fullWidthMaxNumber);
+    }
+}
+
+@mixin heading-5($color: $headline-color, $font-size: 20, $text-transform: uppercase) {
+    @include font-bold();
+    color: $color;
+    font-size: rem($font-size);
+    line-height: 1.285714285714286;
+    letter-spacing: rem(1);
+    text-transform: $text-transform;
+    margin-bottom: rem(16);
+
+    @media (min-width: $tablet) {
+        font-size: dynamic-size($max-font-size: 20, $min-font-size: $font-size, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        line-height: 1.33;
+        margin-bottom: rem(24);
+    }
+
+    @media (min-width: $extraLarge) {
+        font-size: dynamic-size($max-font-size: 22, $min-font-size: 18, $max-viewport: $fullWidthMaxNumber, $min-viewport: $extraLargeNumber);
+    }
+
+    @media (min-width: $extraLargeMonitor) {
+        font-size: dynamic-size($max-font-size: 30, $min-font-size: 22, $max-viewport: $ultraHdMonitorNumber, $min-viewport: $fullWidthMaxNumber);
+    }
+}
+
+@mixin heading-6($color: $headline-color, $font-size: 18, $text-transform: uppercase) {
+    @include font-bold();
+    color: $color;
+    font-size: rem($font-size);
+    line-height: 1.5;
+    letter-spacing: rem(1);
+    text-transform: $text-transform;
+    margin-bottom: rem(16);
+
+    @media (min-width: $tablet) {
+        font-size: dynamic-size($max-font-size: 18, $min-font-size: $font-size, $max-viewport: $extraLargeNumber, $min-viewport: $tabletNumber);
+        letter-spacing: rem(2);
+        margin-bottom: rem(24);
+    }
+
+    @media (min-width: $extraLarge) {
+        font-size: dynamic-size($max-font-size: 20, $min-font-size: 16, $max-viewport: $fullWidthMaxNumber, $min-viewport: $extraLargeNumber);
+    }
+
+    @media (min-width: $extraLargeMonitor) {
+        font-size: dynamic-size($max-font-size: 28, $min-font-size: 20, $max-viewport: $ultraHdMonitorNumber, $min-viewport: $fullWidthMaxNumber);
+    }
+}
+
+@mixin paragraph($color: $text-color, $font-size: 14, $style: medium) {
+    @include font-medium();
+    color: $color;
+    margin-bottom: rem(16);
+    font-size: rem($font-size);
+    line-height: rem(24);
+    letter-spacing: rem(1);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $extraLargeMonitor) {
+        font-size: rem($font-size + 2);
+        line-height: rem(28);
+    }
+
+    @if ($style == big) {
+        font-size: rem($font-size + 2);
+        line-height: rem(28);
+
+        @media (min-width: $extraLargeMonitor) {
+            font-size: rem($font-size + 6);
+            line-height: rem(36);
+        }
+    }
+
+    @if ($style == small) {
+        font-size: rem($font-size - 2);
+        line-height: rem(22);
+
+        @media (min-width: $extraLargeMonitor) {
+            font-size: rem($font-size + 3);
+            line-height: rem(26);
+        }
+    }
+}
+
+@mixin text($color: $primary-color, $font-size: 24, $letter-spacing: 1, $line-height: 48, $marginbottom: 0, $margintop: 13, $opcity: 0.4, $text-transform: none, $style: bold) {
+    @if ($style==italic) {
+        @include font-medium-italic();
+        font-size: rem($font-size);
+        line-height: rem($line-height);
+    }
+
+    @if ($style==medium) {
+        @include font-medium();
+        font-size: rem($font-size);
+        line-height: rem($line-height);
+    }
+
+    @if ($style==bold) {
+        @include font-bold();
+        font-size: rem($font-size);
+        line-height: rem($line-height);
+    }
+
+    color: rgba($color, $opcity);
+    letter-spacing: rem($letter-spacing);
+    margin-bottom: rem($marginbottom);
+    margin-top: rem($margintop);
+    padding: 0;
+    transition: $dynamicLabel;
+    text-transform: $text-transform;
+}
+
+@mixin legal($color: $grey-light, $font-size: 12) {
+    @include font-medium();
+    font-size: rem($font-size);
+    color: rgba($color, 0.4);
+    line-height: rem(18);
+    letter-spacing: rem(1);
+}
+
+@mixin button-text() {
+    @include font-bold();
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@mixin round-arrow-static() {
+    @include font-medium();
+    letter-spacing: rem(1);
+    font-size: rem(12);
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    color: $text-color;
+    cursor: pointer;
+    height: rem(32);
+    width: rem(32);
+
+    &:not(:empty) {
+        padding-left: rem(40);
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &:before {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='16'%3E%3Cpath id='a' d='M10 7V5l5 3-5 3V9H1V7h9z' fill='%23#{hexToString($primary-color)}'/%3E%3C/svg%3E") no-repeat center;
+        background-size: rem(16) auto;
+        z-index: 1;
+    }
+
+    &:after {
+        background-color: transparent;
+        border: rem(2) solid $primary-color;
+        border-radius: 50%;
+        transition: background-color 0.2s;
+    }
+}
+@mixin round-arrow-hover() {
+    @media (min-width: $desktop) {
+        &:before {
+            transform: translateX(0);
+            animation: MovingRightLeft 0.5s infinite forwards;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='16'%3E%3Cpath id='a' d='M10 7V5l5 3-5 3V9H1V7h9z' fill='%23#{hexToString($secondary-color)}'/%3E%3C/svg%3E") no-repeat center;
+        }
+
+        &:after {
+            background-color: $primary-color;
+            transition: background-color 0.2s;
+        }
+    }
+}
+@mixin round-arrow() {
+    @include round-arrow-static();
+
+    &:hover {
+        @include round-arrow-hover();
+    }
+}
+
+@mixin link($color: $primary-color, $hover-color: $text-color) {
+    @include paragraph();
+    @include font-bold();
+    color: $color;
+    margin-bottom: 0;
+    transition: color 0.3s;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+@mixin link-rte() {
+    @include paragraph();
+    @include font-bold();
+    background-color: $primary-color;
+    border: rem(1) solid $primary-color;
+    color: $secondary-color;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    margin-bottom: 0;
+    padding: 0 rem(4);
+    transition: background 0.3s ease, border-style 0.3s ease, color 0.3s ease, padding 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background: transparent;
+        border-style: solid;
+        color: $primary-color;
+        padding: rem(2) rem(4);
+    }
+}
+
+@mixin link-external($color: $primary-color, $hover-color: $text-color) {
+    @include link($color: $color, $hover-color: $hover-color);
+
+    &:after {
+        content: '';
+        display: inline-block;
+        height: rem(16);
+        width: rem(16);
+        transition: background-image 0.3s;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23#{hexToString($color)}' d='M8 2v2H2v10h10V8h2v8H0V2h8zm3.744.837l-1.419-1.418L16 0l-1.419 5.675-1.418-1.419-6.384 6.384L5.36 9.221l6.384-6.384z'/%3E%3C/svg%3E");
+        background-position: 50% 50%;
+        background-size: rem(16) rem(16);
+        background-repeat: no-repeat;
+        margin-left: rem(13);
+        vertical-align: sub;
+    }
+
+    &:hover {
+        &:after {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23#{hexToString($hover-color)}' d='M8 2v2H2v10h10V8h2v8H0V2h8zm3.744.837l-1.419-1.418L16 0l-1.419 5.675-1.418-1.419-6.384 6.384L5.36 9.221l6.384-6.384z'/%3E%3C/svg%3E");
+        }
+    }
+}
+
+@mixin link-internal() {
+    @include link();
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: rem(12);
+        margin: 0 rem(2);
+        width: rem(12);
+        transition: background-image 0.3s ease;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAGNQTFRFAAAA/wCA4QB44QB5/wCA4QB44gB54gB5/wBV4gB34QB54gB4/wAA4QB44QB54QB54wB54gB44gB44gB44gB54gB54QB54gB44gB54wB54QB54QB54gB44gB54gB54QB5/wCAuGtZWgAAACF0Uk5TAAa7tQSb/68DPveoAUT5mkr8k1f9i13+fGVnbn1Q+6ICmS9UZwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAFhJREFUeJxdj0USgEAMBIM1Dou7/P+VFLdkc0tXjYmIBGEUi74E0kyDvICy0qRuoDUi10FvyDDCZMi8wGrIBuw+ODzJqf7LM3W3jfWL/dUfXf0f9+pEM/8D3wUDr7K4jO4AAAAASUVORK5CYII=');
+        background-size: rem(12);
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        &:before {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAGNQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmh03gAAACF0Uk5TAAa7tQSb/68DPveoAUT5mkr8k1f9i13+fGVnbn1Q+6ICmS9UZwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAFhJREFUeJxdj0USgEAMBIM1Dou7/P+VFLdkc0tXjYmIBGEUi74E0kyDvICy0qRuoDUi10FvyDDCZMi8wGrIBuw+ODzJqf7LM3W3jfWL/dUfXf0f9+pEM/8D3wUDr7K4jO4AAAAASUVORK5CYII=');
+        }
+    }
+}
+
+@mixin link-download() {
+    @include link();
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: rem(16);
+        margin: 0 rem(2);
+        width: rem(16);
+        transition: background-image 0.4s ease;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTSA5LjY5IDUuMjE5IEwgMTMuOTczIDUuMjE5IEwgMTMuOTczIDE1LjI4NiBDIDEzLjk3MyAxNS42NTkgMTMuNjkyIDE1Ljk2NCAxMy4zNDggMTUuOTY0IEwgMi42MjUgMTUuOTY0IEMgMi4yODEgMTUuOTY0IDIgMTUuNjU5IDIgMTUuMjg2IEwgMiAwLjY3OCBDIDIgMC4zMDUgMi4yODEgMCAyLjYyNSAwIEwgOS4wNjUgMCBMIDkuMDY1IDQuNTQxIEMgOS4wNjUgNC45MTQgOS4zNDYgNS4yMTkgOS42OSA1LjIxOSBaIE0gMTAuMzA0IDMuODcgTCAxMC4zMDQgMC4zNDMgTCAxNCAzLjgzNyBMIDE0IDMuODcgTCAxMC4zMDQgMy44NyBaIiBzdHlsZT0iZmlsbDogcmdiKDIyNiwgMCwgMTIxKTsiLz4KPC9zdmc+');
+        position: relative;
+        top: rem(2);
+    }
+
+    &:hover {
+        &:before {
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTSA5LjY5IDUuMjE5IEwgMTMuOTczIDUuMjE5IEwgMTMuOTczIDE1LjI4NiBDIDEzLjk3MyAxNS42NTkgMTMuNjkyIDE1Ljk2NCAxMy4zNDggMTUuOTY0IEwgMi42MjUgMTUuOTY0IEMgMi4yODEgMTUuOTY0IDIgMTUuNjU5IDIgMTUuMjg2IEwgMiAwLjY3OCBDIDIgMC4zMDUgMi4yODEgMCAyLjYyNSAwIEwgOS4wNjUgMCBMIDkuMDY1IDQuNTQxIEMgOS4wNjUgNC45MTQgOS4zNDYgNS4yMTkgOS42OSA1LjIxOSBaIE0gMTAuMzA0IDMuODcgTCAxMC4zMDQgMC4zNDMgTCAxNCAzLjgzNyBMIDE0IDMuODcgTCAxMC4zMDQgMy44NyBaIi8+Cjwvc3ZnPg==');
+        }
+    }
+}

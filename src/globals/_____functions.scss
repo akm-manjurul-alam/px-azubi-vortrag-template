@@ -1,0 +1,41 @@
+@function rem($px) {
+    @return ($px / 16) + rem;
+}
+
+@function dynamic-size($max-font-size, $min-font-size, $max-viewport, $min-viewport) {
+    $m: ((($max-font-size / 16) - ($min-font-size / 16)) / (($max-viewport / 16) - ($min-viewport / 16)));
+    $b: (($min-font-size / 16) - ($m * ($min-viewport / 16)));
+
+    @return calc(#{$m} * 100vw + #{$b}rem);
+}
+
+@function hexToString($rawColor) {
+    $color: inspect($rawColor);
+    $index: str-index($color, '#');
+    @if $index {
+        @return str-slice($color, 1, $index - 1) + hexToString(str-slice($color, $index + 1));
+    }
+    @return $color;
+}
+
+@function blend-transparent($foreground, $background) {
+    // https://en.wikipedia.org/wiki/Alpha_compositing#Alpha_blending
+
+    $fg-opacity: opacity($foreground);
+    $bg-opacity: opacity($background);
+
+    $opacity: $fg-opacity + $bg-opacity * (1 - $fg-opacity);
+    $factor: $bg-opacity * (1 - $fg-opacity);
+    $red:   (red($foreground)   * $fg-opacity + red($background)   * $factor) / $opacity;
+    $green: (green($foreground) * $fg-opacity + green($background) * $factor) / $opacity;
+    $blue:  (blue($foreground)  * $fg-opacity + blue($background)  * $factor) / $opacity;
+
+    @return rgba($red, $green, $blue, $opacity);
+}
+
+@function random-num($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+    @return $randomNum;
+}

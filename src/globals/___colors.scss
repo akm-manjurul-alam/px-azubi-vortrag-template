@@ -1,0 +1,35 @@
+// 50 shades darker
+$white: #ffffff;
+$grey-lightest:	#f5f5f5;
+$grey-lighter: #f1f1f1;
+$grey-light: #e8dedd;
+$grey-dark: #bdbdbd;
+$grey-darker: #929292;
+$grey-darkest: #656565;
+$black: #000000;
+
+// Primary Colors
+$primary-color: #ff0354;
+$primary-color-opacity: #6b0b47;
+$pink: #e20079;
+$blue-light: #36affd;
+$blue-dark: #003378;
+$clientwall-border: #34395d;
+$text-color: $grey-light;
+$headline-color: $text-color;
+$input-disabled: #f5f5f51a;
+
+// Secondary Colors
+$secondary-color: #08113e;
+$purple: #062958;
+$purple-dark: #102036;
+$background: $secondary-color;
+
+// Status Colors
+$red: #f63939;
+$yellow: #fcc500;
+$green:	#00e061;
+
+// Moving Animation
+$MovingRightLeft: MovingRightLeft 0.8s ease infinite;
+$pulsate: pulsate 1.5s ease infinite;

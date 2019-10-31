@@ -1,0 +1,40 @@
+$maxWidth: 1440;
+
+// raw breakpoint number values
+$mobileNumber: 576; // Small devices (landscape phones, 576px and up)
+$tabletNumber: 768; // Medium devices (tablets, 768px and up)
+$desktopNumber: 1024; // Large devices (desktops, 992px and up)
+$largeNumber: 1200; // Extra large devices (large desktops, 1200px and up)
+$extraLargeNumber: 1440; // Mainly for navigation styling
+$fullWidthMaxNumber: 1920; // Full hd displays
+$ultraHdMonitorNumber: 2560; // 4k displays
+
+// min-width breakpoints
+$mobile: rem($mobileNumber); // Small devices (landscape phones, 576px and up)
+$tablet: rem($tabletNumber); // Medium devices (tablets, 768px and up)
+$desktop: rem($desktopNumber); // Large devices (desktops, 1024px and up)
+$large: rem($largeNumber); // Extra large devices (large desktops, 1200px and up)
+$extraLarge: rem($extraLargeNumber); // Mainly for navigation styling
+$extraLargeMonitor: rem($fullWidthMaxNumber); // Full hd displays
+$ultraHdMonitor: rem($ultraHdMonitorNumber); // 4k displays
+
+// media queries
+$mqMobile: "(min-width: #{$mobile})";
+$mqTablet: "(min-width: #{$tablet})";
+$mqDesktop: "(min-width: #{$desktop})";
+$mqLarge: "(min-width: #{$large})";
+
+$frameSizeSmall: 8;
+$frameSizeBig: 12;
+
+// transition
+$dynamicLabel: color 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), font-size 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), letter-spacing 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), line-height 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), margin 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+$pulse-animation: pulse 0.2s 0.2s forwards;
+$pulse-animation-background: pulse-background 0.2s 0.4s forwards;
+
+// scroll indicator
+$posMouse: 8px;
+$posText: 2px;
+$posTrackball: 10px;
+$shrinkTrackball: 0.4;
+$animDuration: 10s;
