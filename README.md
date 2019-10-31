@@ -3,7 +3,9 @@
 px-revealvue Presentation Boilerplate
 </h1>
 <p align= "center">
-<img src="src/assets/img/px-vue-reveal.png" alt="px-vue-reveal" width="500"/>
+<img src="src/assets/pixolithlogo.png" alt="px-vue-reveal" width="200"/>
+<img src="src/assets/vuejslogo.png" alt="px-vue-reveal" width="500"/>
+<img src="src/assets/revealjs.png" alt="px-vue-reveal" width="200"/>
 </p>
 
 
