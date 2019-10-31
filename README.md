@@ -2,8 +2,10 @@
 <h1  align="center">
 px-revealvue Presentation Boilerplate
 </h1>
+<p align= "center">
+<img src="src/assets/img/px-vue-reveal.png" alt="px-vue-reveal" width="500"/>
+</p>
 
-<img style="align: center"  src="src/assets/img/px-vue-reveal.png" alt="px-vue-reveal" width="500"/>
 
 ## Project setup
 ###### Installing:```npm install```
