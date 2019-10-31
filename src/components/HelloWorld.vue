@@ -120,19 +120,26 @@
 
     //common things starts
     .reveal .controls .controls-arrow {
-
+        background: $primary-color!important;
+        border-radius: rem(20)!important;
     }
 
     .reveal .controls .controls-arrow:before {
-        background: $text-color;
+        background: $secondary-color !important;
     }
 
     .reveal .controls .controls-arrow:before, .reveal .controls .controls-arrow:after {
-        background: $text-color;
+        background: $secondary-color !important;
+    }
+
+    .reveal .controls .controls-arrow:before, .reveal .controls .controls-arrow:after{
+        height: rem(8) !important;
+        top: -1px !important;
+        left: 3px !important;
     }
 
     .reveal .progress span {
-        background: $primary-color;
+        background: $primary-color !important;
     }
 
     //common things ends
@@ -145,7 +152,7 @@
     }
 
     section {
-        background: $primary-color;
+        background: $primary-color !important;
         color: $secondary-color !important;
         border-radius: 8px;
         padding: 30px !important;
@@ -153,11 +160,12 @@
 
     .reveal h1, .reveal h2 {
         font-weight: 900 !important;
+        color: $text-color!important;
     }
 
     .reveal h3, .reveal h4 {
         font-weight: 900 !important;
-        color: $text-color;
+        color: $text-color !important;
         font-size: 34px !important;
         text-align: left !important;
     }
@@ -166,12 +174,14 @@
         font-weight: 900 !important;
         text-align: left !important;
         font-size: 24px;
+        color: $text-color !important;
     }
 
     p, ul, li {
         font-size: 24px !important;
         line-height: 40px !important;
         width: 80% !important;
+        color: $secondary-color!important;
     }
 
     .reveal p {
@@ -184,6 +194,7 @@
 
         h1 {
             color: $text-color;
+            text-align: left;
         }
 
         p {
@@ -226,12 +237,15 @@
     .reveal-footer-text {
         width: 100%;
         display: flex;
-        color: $text-color;
         position: absolute;
         bottom: 0;
         padding: 0 rem(20);
 
         &-title {
+            @include text($style: italic);
+            font-size: rem(12) !important;
+            font-weight: 400;
+            color: $text-color!important;
             width: 50%;
         }
     }
