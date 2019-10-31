@@ -40,12 +40,14 @@ and it stands on Vuejs.
 The guideline to use Vuejs can be found on See [Vuejs Getting Started](https://cli.vuejs.org).
 
 ### REVEAL.JS
+Website: [Reveal.js](https://revealjs.com/#/)
+
+Github: [Github-Repository](https://github.com/hakimel/reveal.js)
+ 
 ```
-The guideline to use Revealjs can be found [public/revealjs-FAQ/Revealjs-readme.txt] 
-or 
-reveal.js by Hakim - [Github-Repository](https://github.com/hakimel/reveal.js) 
-& 
-[Reveal.js](https://revealjs.com/#/)
+reveal.js by Hakim
+The guideline to use Revealjs can be found [public/revealjs-FAQ/Revealjs-readme.txt]
 ```
 #### Backstage
 Author: [MasterMischu](https://www.mastermischu.de) with the Courtesy of [pixolith GmbH & Co. KG](https://www.pixolith.de).
+
