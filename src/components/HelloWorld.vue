@@ -12,37 +12,44 @@
                     </p>
                 </section>
                 <section>
-                    <h3>Was ist RFID?</h3>
+                    <h3>Was ist MDSD?</h3>
                     <ul>
-                        <li>TAGNOLOGY</li>
-                        <li>Radio Frequency Identifikation</li>
-                        <li>Lokalisierung</li>
-                        <li>Ein kleiner Chip oder Tag zum Lesen von Funkwellen, die zur Identifizierung verwendet
-                            werden.
-                        </li>
-                        <li>Muss nicht in Sichtweite sein</li>
-                        <li>Kann an Produkten, Tieren oder sogar Menschen befestigt / implantiert werden</li>
+                        <li>Grundprinzipien der modellgetriebenen</li>
+                        <li>Voraussetzungen</li>
+                        <li>Wieso MDSD?</li>
+                        <li>Wer Benutz es noch</li>
                     </ul>
                 </section>
                 <section>
-                    <h3>Wie Funktioniert RFID brief</h3>
+                    <h3>Rollen der MDSD</h3>
                     <ul>
-                        <li>Tagging (oder Chips) bestehen aus zwei Teilen: i. Antenne II. Prozessor / Speicher</li>
-                        <li>Empfängt ein Signal vom Lesegerät und gibt ein Rückmeldesignal mit der ID-Nummer aus</li>
-                        <li>Der Leser sendet die Nummer an die Datenbank oder den Server</li>
+                        <li>Werkzeugentwickler</li>
+                        <li>Anwendungsentwickler</li>
                     </ul>
                 </section>
                 <section class="bgimg-funktion">
                     <img src="assets/rfid-funktion.png" alt="funktion">
                 </section>
                 <section>
-                    <h3>Was sind die Funktionen von RFID?</h3>
+                    <h3>Wann sollten Anwendungsentwickler
+                        eine MDD-Infrastruktur benutzen?</h3>
                     <ul>
-                        <li> Inventar</li>
-                        <li> Interne Kontrolle von Aufwandsposten</li>
-                        <li> Diebstahlschutz</li>
-                        <li> RFID im Vergleich zum Barcode-Tagging</li>
+                        <li>adäquate Modellierungssprache vorhanden</li>
+                        <li>genügend Domänenwissen behandelt</li>
+                        <li>ein genügend ausgereifter Codegenerator vorhanden</li>
+                        <li>Referenzanwendungen zum Vergleich vorhanden</li>
+                        <li>Entwicklungsumgebung zur modellgetriebenen
+                            Softwareentwicklung vorhanden</li>
                     </ul>
+                </section>
+                <section class="bgimg-human">
+                    <img src="assets/evolution-of-rfid-.jpg" alt="iterative_softwareentwicklung" width="50%">
+                </section>
+                <section>
+                    <h3>MDA</h3>
+                    <p>Gestern</p>
+                    <p>Heute</p>
+                    <p>Zukunft</p>
                 </section>
                 <section class="arten">
                     <h3>Arten von RFID-Tags</h3>
@@ -51,15 +58,6 @@
                         <li><strong>Passive Transponder</strong></li>
                         <li><strong>Aktive Transponder</strong></li>
                     </ul>
-                </section>
-                <section class="bgimg-human">
-                    <img src="assets/evolution-of-rfid-.jpg" alt="history" width="50%">
-                </section>
-                <section>
-                    <h3>RFID Heute</h3>
-                    <p>Gestern</p>
-                    <p>Heute</p>
-                    <p>Zukunft</p>
                 </section>
                 <section class="vor-nach">
                     <div class='left'>
