@@ -91,8 +91,9 @@
             </div>
 
             <div class="reveal-footer-text">
-                <p class="reveal-footer-text-title">Modellgetriebene Entwicklung - Firas & Alam</p>
+                <p class="reveal-footer-text-title">Modellgetriebene Entwicklung - Firas & Alam |</p>
             </div>
+            <stopuhr/>
         </div>
     </div>
 </template>
@@ -100,10 +101,12 @@
 <script>
     // import HelloWorld from './components/HelloWorld.vue'
     import Reveal from 'reveal.js/js/reveal'
+    import Stopuhr from "./stopuhr";
 
     export default {
         name: 'app',
         components: {
+            Stopuhr
             // HelloWorld
         },
         mounted() {
