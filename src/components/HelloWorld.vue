@@ -28,7 +28,7 @@
                     </ul>
                 </section>
                 <section class="bgimg-funktion">
-                    <img src="assets/rfid-funktion.png" alt="funktion">
+                    <img src="../assets/mdsd.png" alt="funktion">
                 </section>
                 <section>
                     <h3>Wann sollten Anwendungsentwickler
@@ -39,11 +39,17 @@
                         <li>ein genügend ausgereifter Codegenerator vorhanden</li>
                         <li>Referenzanwendungen zum Vergleich vorhanden</li>
                         <li>Entwicklungsumgebung zur modellgetriebenen
-                            Softwareentwicklung vorhanden</li>
+                            Softwareentwicklung vorhanden
+                        </li>
                     </ul>
                 </section>
                 <section class="bgimg-human">
-                    <img src="assets/evolution-of-rfid-.jpg" alt="iterative_softwareentwicklung" width="50%">
+                    <img class="shake-img" src="../assets/data-eng-desktop.jpg" alt="iterative_softwareentwicklung"
+                         width="50%">
+                </section>
+                <section class="bgimg-human">
+                    <img class="shake-img" src="../assets/data-eng-desktop.png" alt="iterative_softwareentwicklung"
+                         width="50%">
                 </section>
                 <section>
                     <h3>MDA</h3>
@@ -85,8 +91,9 @@
                 <section>
                     <h1>Vielen Dank<strong>!</strong></h1>
                     <p>Fragen<strong>?</strong></p>
-                    <p>Habt Ihr bock auf eine test<strong>😏</strong></p>
-                    <p>Wenn nein ist auch egal müsst ihr aber<strong>😜</strong></p>
+                    <div class="joke-wrapper">
+                        <img src="../assets/joke.png" alt="" class="joke">
+                    </div>
                 </section>
             </div>
 
@@ -121,8 +128,8 @@
 
     //common things starts
     .reveal .controls .controls-arrow {
-        background: $primary-color!important;
-        border-radius: rem(20)!important;
+        background: $primary-color !important;
+        border-radius: rem(20) !important;
     }
 
     .reveal .controls .controls-arrow:before {
@@ -133,7 +140,7 @@
         background: $secondary-color !important;
     }
 
-    .reveal .controls .controls-arrow:before, .reveal .controls .controls-arrow:after{
+    .reveal .controls .controls-arrow:before, .reveal .controls .controls-arrow:after {
         height: rem(8) !important;
         top: -1px !important;
         left: 3px !important;
@@ -161,7 +168,7 @@
 
     .reveal h1, .reveal h2 {
         font-weight: 900 !important;
-        color: $text-color!important;
+        color: $text-color !important;
     }
 
     .reveal h3, .reveal h4 {
@@ -182,7 +189,7 @@
         font-size: 24px !important;
         line-height: 40px !important;
         width: 80% !important;
-        color: $secondary-color!important;
+        color: $secondary-color !important;
     }
 
     .reveal p {
@@ -206,6 +213,10 @@
     .bgimg-human, .bgimg-funktion {
         padding: 0 !important;
         background: transparent;
+    }
+
+    .shake-img {
+        width: 100%;
     }
 
     .vor-nach {
@@ -246,8 +257,16 @@
             @include text($style: italic);
             font-size: rem(12) !important;
             font-weight: 400;
-            color: $text-color!important;
+            color: $text-color !important;
             width: 50%;
+        }
+    }
+
+    .joke-wrapper{
+        .joke{}
+
+        .joke-text{
+            
         }
     }
 </style>
