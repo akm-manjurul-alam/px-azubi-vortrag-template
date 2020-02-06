@@ -14,12 +14,54 @@
                 <section>
                     <h3>Was ist MDSD?</h3>
                     <ul>
-                        <li>Grundprinzipien der modellgetriebenen</li>
-                        <li>Voraussetzungen</li>
-                        <li>Wieso MDSD?</li>
-                        <li>Wer Benutz es noch</li>
+                        <li>Ein Oberbegriff für Techniken</li>
+                        <li>Automatisiert aus formalen</li>
+                        <li>Basiert auf Modellen</li>
+                        <li>LauffähigeSoftwareerzeugen</li>
                     </ul>
                 </section>
+
+                <section>
+                    <h3>
+                        Was ist überhaupt ein Modell in diesem Kontext?
+                    </h3>
+                </section>
+
+                <section>
+                    <h3>Modell ist:</h3>
+                    <ul>
+                        <li>Original und Sein wichtige Eigenschaft</li>
+                        <li>Abstraktion</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>MOdell</h3>
+                    <ul>
+                        <li>Original und Sein wichtige Eigenschaft</li>
+                        <li>Abstraction</li>
+                        <li>Zwick</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Bei MDSD</h3>
+                    <ul>
+                        <li>Hauptartfackt = Modell</li>
+                        <li>Codegenerierung</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>UML-MODELLE</h3>
+                    <ul>
+                        <li>Komponenten</li>
+                        <li>Klassen</li>
+                        <li>Sequenz</li>
+                        <li>Objekt</li>
+                    </ul>
+                </section>
+
                 <section>
                     <h3>Rollen der MDSD</h3>
                     <ul>
@@ -48,43 +90,28 @@
                          width="50%">
                 </section>
                 <section class="bgimg-human">
-                    <img class="shake-img" src="../assets/data-eng-desktop.png" alt="iterative_softwareentwicklung"
+                    <img class="shake-img" src="../assets/data-eng-desktop-modern.png"
+                         alt="iterative_softwareentwicklung"
                          width="50%">
                 </section>
                 <section>
-                    <h3>MDA</h3>
-                    <p>Gestern</p>
-                    <p>Heute</p>
-                    <p>Zukunft</p>
-                </section>
-                <section class="arten">
-                    <h3>Arten von RFID-Tags</h3>
-                    <ul>
-                        <li><strong>Semi-Passive Transponder</strong></li>
-                        <li><strong>Passive Transponder</strong></li>
-                        <li><strong>Aktive Transponder</strong></li>
-                    </ul>
-                </section>
-                <section class="vor-nach">
-                    <div class='left'>
+                    <div>
                         <h3>Vorteil</h3>
                         <ul>
-                            <li> Sicherheit</li>
-                            <li> Einfacher Zugriff</li>
-                            <li> Medizinische Notfälle</li>
-                            <li> Erweiterte Produktverfolgung</li>
-                            <li> Schneller Komfort</li>
+                            <li> Weniger Aufwand</li>
+                            <li> Konsistenz</li>
+                            <li> Modell Aufbau genau plannen</li>
+                            <li> Steigert die Effektivität und Qualität der Entwicklung</li>
                         </ul>
                     </div>
-                    <div class="line"></div>
-                    <div class='right'>
+                </section>
+                <section>
+                    <div>
                         <h3>Nachteil</h3>
                         <ul>
-                            <li> Teuer</li>
-                            <li> Leseprobleme (nass oder beschädigt)</li>
-                            <li> Radiowellen (Telefonturm oder Walkie - Talkie usw.)</li>
-                            <li> Unterschiedliches Nutzungsmuster (USA oder EU)</li>
-                            <li> Tracking Disorder (Angst vor Tracking beim Kauf von Gegenständen mit Tag)</li>
+                            <li> Manuelle Codeänderungen</li>
+                            <li> Präzise Modell</li>
+                            <li> Anfangskosten</li>
                         </ul>
                     </div>
                 </section>
@@ -117,7 +144,11 @@
             // HelloWorld
         },
         mounted() {
-            Reveal.initialize()
+            Reveal.initialize(
+                {
+                    navigationMode: 'default',
+                }
+            )
         }
     }
 </script>
@@ -227,23 +258,14 @@
 
     .left {
         position: relative;
+        width: 100%;
         max-width: 40% !important;
-    }
-
-    .line:before {
-        content: '\A';
-        position: absolute;
-        display: block;
-        width: 4%;
-        height: 90%;
-        margin-left: -60px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .right {
-        max-width: 40% !important;
+        position: relative;
+        width: 100%;
+        max-width: 50% !important;
     }
 
     .reveal-footer-text {
@@ -262,11 +284,12 @@
         }
     }
 
-    .joke-wrapper{
-        .joke{}
+    .joke-wrapper {
+        .joke {
+        }
 
-        .joke-text{
-            
+        .joke-text {
+
         }
     }
 </style>
