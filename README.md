@@ -37,7 +37,7 @@ This project and its templates are made with Revealjs with the theme-pixolith-20
 and it stands on Vuejs.
 ```
 ### Vue.js
-The guideline to use Vuejs can be found on See [Vuejs Getting Started](https://cli.vuejs.org).
+The guideline to use for Vuejs can be found on See [Vuejs Getting Started](https://cli.vuejs.org).
 
 ### REVEAL.JS
 Website: [Reveal.js](https://revealjs.com/#/)
