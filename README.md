@@ -20,15 +20,17 @@ px-revealvue Presentation Boilerplate
 
 # pxmm-revealvue configurations:
 
-###This is a template made specially for Azubis to present on the school with or without projects.
+##This is a template made specially for Azubis to present on the school with or without projects.
 
-######To edit presentation data follow the steps:
-#######Put your data inside ```[scr/components/HelloWorld]```
-#######Put your new contents inside ```[src/components/(your new vue file)]```
-#######Add new componetns inside ```[src/views/Home.vue]```
-#######Add new template inside ```[src/App.vue]```
-#######Put your images inside ```[src/assets/img] ``` 
-#######Edit global mixins in ```[src/globals/(your scss file)]```
+
+####To edit presentation data follow the steps:
+######Put your data inside ```[scr/components/HelloWorld]```
+######Put your new contents inside ```[src/components/(your new vue file)]```
+######Add new componetns inside ```[src/views/Home.vue]```
+######Add new template inside ```[src/App.vue]```
+######Put your images inside ```[src/assets/img] ``` 
+######Edit global mixins in ```[src/globals/(your scss file)]```
+
 
 
 ## Project specification
